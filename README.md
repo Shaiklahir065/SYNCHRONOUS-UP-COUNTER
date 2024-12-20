@@ -38,9 +38,14 @@ Developed by: RegisterNumber:
 */
 
 **RTL LOGIC UP COUNTER**
+![Screenshot 2024-12-20 132136](https://github.com/user-attachments/assets/8c08df53-ed4e-4e8c-95ba-eef5773897f6)
 
 **TIMING DIAGRAM FOR IP COUNTER**
+![Screenshot 2024-12-20 134001](https://github.com/user-attachments/assets/b4f65162-3619-4136-817e-febc409839b4)
 
 **TRUTH TABLE**
 
+![Screenshot_2024-12-20_103027 1](https://github.com/user-attachments/assets/24c9c6e3-1167-4733-b6f6-90a4d9999de0)
+
 **RESULTS**
+Thus the Synchronous 3 bit Up counter is implemeted and verified.
