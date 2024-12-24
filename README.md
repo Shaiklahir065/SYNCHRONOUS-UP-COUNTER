@@ -36,7 +36,8 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+Developed by:Shaik lahir
+RegisterNumber:24005737
 */
 
 **RTL LOGIC UP COUNTER**
