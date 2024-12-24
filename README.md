@@ -10,6 +10,8 @@ Quartus prime
 
 **THEORY**
 
+Synchronous Up Counter. A Synchronous up counter counts in increasing order, i.e., it starts from 0 and increments by 1 for each clock pulse.
+
 **4 bit synchronous UP Counter**
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
@@ -45,7 +47,8 @@ Developed by: RegisterNumber:
 
 **TRUTH TABLE**
 
-![Screenshot_2024-12-20_103027 1](https://github.com/user-attachments/assets/24c9c6e3-1167-4733-b6f6-90a4d9999de0)
+![WhatsApp Image 2024-12-21 at 08 57 55_f20651ea](https://github.com/user-attachments/assets/233ac69f-a341-4be1-8757-b6ad53de513e)
+
 
 **RESULTS**
 Thus the Synchronous 3 bit Up counter is implemeted and verified.
