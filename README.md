@@ -10,7 +10,19 @@ Quartus prime
 
 **THEORY**
 
-Synchronous Up Counter. A Synchronous up counter counts in increasing order, i.e., it starts from 0 and increments by 1 for each clock pulse.
+
+              module ex11(out,clk,rst);
+              input clk,rst;
+              output reg [3:0]out;
+              always @ (posedge clk)
+              begin
+                 if(rst)
+                   out<=0;
+                 else 
+                   out <= out+1;
+              end
+              endmodule
+
 
 **4 bit synchronous UP Counter**
 
