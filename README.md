@@ -63,7 +63,7 @@ RegisterNumber:24005737
 **RTL LOGIC UP COUNTER**
 ![Screenshot 2024-12-20 132136](https://github.com/user-attachments/assets/8c08df53-ed4e-4e8c-95ba-eef5773897f6)
 
-**TIMING DIAGRAM FOR IP COUNTER**
+**TIMING DIAGRAM FOR UP COUNTER**
 ![Screenshot 2024-12-20 134001](https://github.com/user-attachments/assets/b4f65162-3619-4136-817e-febc409839b4)
 
 **RESULT**
