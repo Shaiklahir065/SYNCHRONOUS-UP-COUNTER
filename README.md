@@ -10,20 +10,6 @@ Quartus prime
 
 **THEORY**
 
-
-              module ex11(out,clk,rst);
-              input clk,rst;
-              output reg [3:0]out;
-              always @ (posedge clk)
-              begin
-                 if(rst)
-                   out<=0;
-                 else 
-                   out <= out+1;
-              end
-              endmodule
-
-
 **4 bit synchronous UP Counter**
 
 If we enable each J-K flip-flop to toggle based on whether or not all preceding flip-flop outputs (Q) are “high,” we can obtain the same counting sequence as the asynchronous circuit without the ripple effect, since each flip-flop in this circuit will be clocked at exactly the same time:
@@ -40,17 +26,39 @@ Since the first (LSB) flip-flop needs to toggle at every clock pulse, its J and 
 The next flip-flop need only “recognize” that the first flip-flop’s Q output is high to be made ready to toggle, so no AND gate is needed.
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
+**TRUTH TABLE**
+
+![WhatsApp Image 2024-12-21 at 08 57 55_f20651ea](https://github.com/user-attachments/assets/233ac69f-a341-4be1-8757-b6ad53de513e)
+
 **Procedure**
 
-/* write all the steps invloved */
+1.Type the program in Quartus software.
+
+2.Compile and run the program.
+
+3.Generate the RTL schematic and save the logic diagram.
+
+4.Create nodes for inputs and outputs to generate the timing diagram.
+
+5.For different input combinations generate the timing diagram
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+              module ex11(out,clk,rst);
+                        input clk,rst;
+                        output reg [3:0]out;
+                        always @ (posedge clk)
+                        begin
+                           if(rst)
+                             out<=0;
+                           else 
+                             out <= out+1;
+                        end
+                        endmodule
 
 Developed by:Shaik lahir
+
 RegisterNumber:24005737
-*/
 
 **RTL LOGIC UP COUNTER**
 ![Screenshot 2024-12-20 132136](https://github.com/user-attachments/assets/8c08df53-ed4e-4e8c-95ba-eef5773897f6)
@@ -58,10 +66,6 @@ RegisterNumber:24005737
 **TIMING DIAGRAM FOR IP COUNTER**
 ![Screenshot 2024-12-20 134001](https://github.com/user-attachments/assets/b4f65162-3619-4136-817e-febc409839b4)
 
-**TRUTH TABLE**
+**RESULT**
 
-![WhatsApp Image 2024-12-21 at 08 57 55_f20651ea](https://github.com/user-attachments/assets/233ac69f-a341-4be1-8757-b6ad53de513e)
-
-
-**RESULTS**
-Thus the Synchronous 3 bit Up counter is implemeted and verified.
+Thus the Synchronous 4 bit Up counter is implemeted and verified.
